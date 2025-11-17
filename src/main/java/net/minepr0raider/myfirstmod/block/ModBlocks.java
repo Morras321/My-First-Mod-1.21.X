@@ -19,14 +19,28 @@ public class ModBlocks {
             .requiresTool()
             .sounds(BlockSoundGroup.AMETHYST_BLOCK)
     ));
+
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block", new Block(AbstractBlock.Settings.create()
             .strength(3f)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE)
     ));
+
     public static final Block LEMON_BLOCK = registerBlock("lemon_block", new Block(AbstractBlock.Settings.create()
             .strength(1f)
             .sounds(BlockSoundGroup.SNOW)
+    ));
+
+    public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore", new Block(AbstractBlock.Settings.create()
+            .strength(3f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.STONE)
+    ));
+
+    public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.DEEPSLATE)
     ));
 
     private static Block registerBlock(String name, Block block) {
@@ -45,6 +59,8 @@ public class ModBlocks {
             entries.add(ModBlocks.PINK_GARNET_BLOCK);
             entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
             entries.add(ModBlocks.LEMON_BLOCK);
+            entries.add(ModBlocks.PINK_GARNET_ORE);
+            entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
         });
     }
 }

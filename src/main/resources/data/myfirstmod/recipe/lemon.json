@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "myfirstmod:lemon_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "myfirstmod:lemon"
+  }
+}
