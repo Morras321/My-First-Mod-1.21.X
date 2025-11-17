@@ -14,8 +14,20 @@ import net.minecraft.util.Identifier;
 import net.minepr0raider.myfirstmod.MyFirstMod;
 
 public class ModBlocks {
-    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static final Block LEMON_BLOCK = registerBlock("lemon_block", new Block(AbstractBlock.Settings.create().strength(1f).sounds(BlockSoundGroup.SNOW)));
+    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", new Block(AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+    ));
+    public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block", new Block(AbstractBlock.Settings.create()
+            .strength(3f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.STONE)
+    ));
+    public static final Block LEMON_BLOCK = registerBlock("lemon_block", new Block(AbstractBlock.Settings.create()
+            .strength(1f)
+            .sounds(BlockSoundGroup.SNOW)
+    ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -31,6 +43,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.PINK_GARNET_BLOCK);
+            entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
             entries.add(ModBlocks.LEMON_BLOCK);
         });
     }
