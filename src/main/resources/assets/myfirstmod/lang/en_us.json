@@ -1,4 +1,7 @@
 {
   "item.myfirstmod.pink_garnet": "Pink Garnet",
-  "item.myfirstmod.lemon": "Lemon"
+  "item.myfirstmod.lemon": "Lemon",
+
+  "block.myfirstmod.pink_garnet_block": "Block of Pink Garnet",
+  "block.myfirstmod.lemon_block": "Block of Lemon"
 }
