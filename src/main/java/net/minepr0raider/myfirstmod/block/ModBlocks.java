@@ -12,6 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minepr0raider.myfirstmod.MyFirstMod;
+import net.minepr0raider.myfirstmod.block.custom.MagicBlock;
 
 public class ModBlocks {
     public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block", new Block(AbstractBlock.Settings.create()
@@ -43,6 +44,12 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.DEEPSLATE)
     ));
 
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block", new MagicBlock(AbstractBlock.Settings.create()
+            .strength(1f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.FROGLIGHT)
+    ));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(MyFirstMod.MOD_ID, name), block);
@@ -61,6 +68,7 @@ public class ModBlocks {
             entries.add(ModBlocks.LEMON_BLOCK);
             entries.add(ModBlocks.PINK_GARNET_ORE);
             entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+            entries.add(ModBlocks.MAGIC_BLOCK);
         });
     }
 }

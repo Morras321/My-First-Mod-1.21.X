@@ -3,10 +3,13 @@
   "item.myfirstmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.myfirstmod.lemon": "Lemon",
   "item.myfirstmod.chisel": "Chisel",
+  "item.myfirstmod.cauliflower": "Cauliflower",
+  "item.myfirstmod.starlight_ashes": "Starlight Ashes",
 
   "block.myfirstmod.pink_garnet_block": "Block of Pink Garnet",
   "block.myfirstmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.myfirstmod.lemon_block": "Block of Lemon",
+  "block.myfirstmod.magic_block": "Block of Magic",
 
   "block.myfirstmod.pink_garnet_ore": "Block of Pink Garnet Ore",
   "block.myfirstmod.raw_pink_garnet_deepslate_ore": "Block of Raw Pink Garnet Deepslate Ore",

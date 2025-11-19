@@ -2,6 +2,7 @@ package net.minepr0raider.myfirstmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minepr0raider.myfirstmod.block.ModBlocks;
 import net.minepr0raider.myfirstmod.item.ModItemGroups;
 import net.minepr0raider.myfirstmod.item.ModItems;
@@ -18,5 +19,7 @@ public class MyFirstMod implements ModInitializer {
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+        FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
 }
